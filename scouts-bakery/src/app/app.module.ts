@@ -1,0 +1,51 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
+
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { SearchComponent } from './search/search.component';
+import { TagsComponent } from './tags/tags.component';
+import { DessertPageComponent } from './pages/dessert-page/dessert-page.component';
+import { CartPageComponent } from './pages/cart-page/cart-page.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TitleComponent } from './title/title.component';
+import { MatBadgeModule } from '@angular/material/badge';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    HomeComponent,
+    FooterComponent,
+    SearchComponent,
+    TagsComponent,
+    DessertPageComponent,
+    CartPageComponent,
+    PageNotFoundComponent,
+    TitleComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MatToolbarModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatCardModule,
+    MatBadgeModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}

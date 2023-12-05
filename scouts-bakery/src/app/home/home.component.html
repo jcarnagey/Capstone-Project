@@ -1,0 +1,19 @@
+<app-search></app-search>
+<app-tags></app-tags>
+<ul>      
+    <li *ngFor="let dessert of desserts">
+    <a routerLink="/dessert/{{dessert.id}}">
+        <img src="{{dessert.imageUrl}}" alt="{{dessert.name}}"/>
+        <div class="content">
+            <div class="name">
+                {{dessert.name}}
+            </div>
+            <div class="dessert-footer">
+                    <div class="category"><span>{{dessert.category}}</span></div>
+                <div class="price">{{dessert.price | currency}}</div>
+            </div>
+        </div>
+    </a>
+    </li>
+</ul>
+<app-footer></app-footer>

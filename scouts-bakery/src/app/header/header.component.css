@@ -1,0 +1,18 @@
+mat-toolbar{
+    background-color: rgb(251, 157, 198);
+    color: rgb(247, 246, 197);
+    display: flex;
+    justify-content: space-between;
+}
+a, img{
+    width: 90px;
+    padding-top: 10px;
+}
+
+mat-icon{
+    color: rgb(247, 246, 197);
+    padding-top: 2px;
+}
+
+
+

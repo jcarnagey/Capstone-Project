@@ -1,0 +1,21 @@
+<div class="container">
+    <img [src]="dessert.imageUrl" [alt]="dessert.id"/>
+    <div class="details">
+        <div class="header">
+            <span class="name">
+                {{dessert.name}}
+            </span>
+        </div>
+        <div class="tags">
+            <a  routerLink="/">
+                {{dessert.category}}
+            </a>
+        </div>
+        <div class="price">
+            <span>
+                {{dessert.price | currency}}
+            </span>
+        </div>
+        <button (click)="addToCart()">Add To Cart</button>
+    </div>
+</div>
