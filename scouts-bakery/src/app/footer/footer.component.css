@@ -1,0 +1,51 @@
+footer {
+    background-color: rgb(251, 157, 198);
+    color: #fff;
+    padding: 20px 0;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 100px;
+    height: auto;
+}
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+li {
+    list-style-type: none;
+    color: rgb(247, 246, 197);
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+    margin: 14px;
+}
+
+#about-me{
+    padding: 0.8rem;
+}
+h1{
+    color: rgb(247, 246, 197);
+    margin: 20px;
+}
+p{
+    font-size: 10px;
+}
+
+google-map{
+    display: flex;
+    justify-content: center;
+}
+hr{
+    border: 1px solid rgb(247, 246, 197);
+    margin: 20px;
+}

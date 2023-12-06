@@ -20,6 +20,7 @@ import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TitleComponent } from './title/title.component';
 import { MatBadgeModule } from '@angular/material/badge';
+import { GoogleMapsModule } from '@angular/google-maps'
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatMenuModule,
     MatButtonModule,
     MatCardModule,
-    MatBadgeModule
+    MatBadgeModule,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
