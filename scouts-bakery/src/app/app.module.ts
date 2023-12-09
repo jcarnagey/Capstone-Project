@@ -20,7 +20,8 @@ import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TitleComponent } from './title/title.component';
 import { MatBadgeModule } from '@angular/material/badge';
-import { GoogleMapsModule } from '@angular/google-maps'
+import { GoogleMapsModule } from '@angular/google-maps';
+import { AboutComponent } from './about/about.component'
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { GoogleMapsModule } from '@angular/google-maps'
     DessertPageComponent,
     CartPageComponent,
     PageNotFoundComponent,
-    TitleComponent
+    TitleComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

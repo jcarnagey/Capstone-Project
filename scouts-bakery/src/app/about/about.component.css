@@ -1,0 +1,22 @@
+div{
+    display: flex;
+    justify-content: center;
+}
+p{
+    position: absolute;
+    width: 80%;
+    margin: 15%;
+    padding: 10px;
+}
+h1{
+    position: absolute;
+    margin: 8%;
+}
+img{
+    position: sticky;
+    width: 50%;
+    opacity: 0.2;
+}
+
+
+
