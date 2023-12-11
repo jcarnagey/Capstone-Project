@@ -4,7 +4,7 @@
 Though this projetc has may base functions, it is not a fully deployable app.
 The basic layout for an SPA website with some fun features.
 
-## Some of the technologies I used were:
+## Some of the technologies I used:
  * Angular
  * Angular Materials
  * HTML
