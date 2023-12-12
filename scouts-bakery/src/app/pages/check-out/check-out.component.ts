@@ -18,12 +18,5 @@ export class CheckOutComponent implements OnInit{
   }
 
   ngOnInit(): void {
-      this.checkoutForm = this.formBuilder.group({
-
-      })
   }
-  get fc() {
-    return this.checkoutForm.controls;
-  }
-
 }

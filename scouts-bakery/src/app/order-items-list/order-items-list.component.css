@@ -6,14 +6,9 @@ table{
     padding: 0.5rem 1rem;
 }
 
-td{
-    color: rgb(251, 157, 198);
-}
-
 h3{
     margin-top: 0.5rem;
     margin-left: 0.3rem;
-    color: rgb(251, 157, 198);
 }
 
 a:hover{
