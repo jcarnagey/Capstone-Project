@@ -1,6 +1,3 @@
-app-about{
-    margin-bottom: 20%;
-}
 ul{
     display: flex;
     justify-content: center;
@@ -9,7 +6,6 @@ ul{
     list-style-type: none;
     padding: 0;
 }
-
 li a{
     height: 20rem;
     width: 15rem;
@@ -25,29 +21,24 @@ li a:hover{
     opacity: 0.9;
     cursor: pointer;
 }
-
 li a img{
     object-fit: cover;
     height: 14.5rem;
 }
-
 .content{
     margin-top: 0.3rem;
     padding: 0.5rem 1rem;
     position: relative;
     height: 7rem;
 }
-
 .dessert-footer{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
-
 span{
     color: rgb(249, 118, 175);
 }
-
 .price{
     position: absolute;
     bottom: 0;
@@ -57,7 +48,6 @@ span{
     margin-top: 0.7rem;
     font-size: 1.1rem;
 }
-
 .category, span{
     background-color: rgb(249, 118, 175);
     padding: 0.3rem 1rem;

@@ -21,7 +21,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { TitleComponent } from './title/title.component';
 import { MatBadgeModule } from '@angular/material/badge';
 import { GoogleMapsModule } from '@angular/google-maps';
-import { AboutComponent } from './about/about.component'
+import { AboutComponent } from './about/about.component';
+import { CheckOutComponent } from './pages/check-out/check-out.component';
+import { OrderItemsListComponent } from './order-items-list/order-items-list.component'
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { AboutComponent } from './about/about.component'
     CartPageComponent,
     PageNotFoundComponent,
     TitleComponent,
-    AboutComponent
+    AboutComponent,
+    CheckOutComponent,
+    OrderItemsListComponent
   ],
   imports: [
     BrowserModule,
