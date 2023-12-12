@@ -12,3 +12,5 @@ The basic layout for an SPA website with some fun features.
  * Typescript
  * Google Maps API
 
+## Developed by:
+John Carnagey
