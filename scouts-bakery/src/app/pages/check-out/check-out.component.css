@@ -24,7 +24,11 @@ input, textarea{
     margin: 10px 0 auto;
     border: 1px solid rgb(251, 157, 198);
     border-radius: 5px;
+    color: rgb(203, 8, 93)
 }
 input, textarea:hover{
     cursor: pointer;
+}
+::placeholder{
+    color: rgb(203, 8, 93);
 }

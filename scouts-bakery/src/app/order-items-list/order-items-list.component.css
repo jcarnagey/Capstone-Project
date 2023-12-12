@@ -5,6 +5,9 @@ table{
     border-radius: 5px;
     padding: 0.5rem 1rem;
 }
+td{
+    color: rgb(203, 8, 93);
+}
 
 h3{
     margin-top: 0.5rem;
