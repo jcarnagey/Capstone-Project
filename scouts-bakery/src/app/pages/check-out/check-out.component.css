@@ -31,4 +31,5 @@ input, textarea:hover{
 }
 ::placeholder{
     color: rgb(203, 8, 93);
+    opacity: 0.6;
 }
