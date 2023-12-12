@@ -11,6 +11,7 @@ The basic layout for an SPA website with some fun features.
  * CSS
  * Typescript
  * Google Maps API
+ * Wepik Logo Maker
 
 ## Developed by:
 John Carnagey
