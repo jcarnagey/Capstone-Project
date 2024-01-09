@@ -4,6 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { DessertService } from '../../services/dessert.service';
 import { CartService } from '../../services/cart.service';
 
+
 @Component({
   selector: 'app-dessert-page',
   templateUrl: './dessert-page.component.html',
@@ -15,9 +16,11 @@ export class DessertPageComponent implements OnInit {
     private cartService:CartService, private router: Router) {
     activatedRoute.params.subscribe((params) => {
       if(params.id)
-      this.dessert = dessertService.getDessertById(params.id);
+      dessertService.getDessertById(params.id).subscribe(serverDessert => {
+    this.dessert = serverDessert;
+      });
     })
-   }
+  }
 
    ngOnInit(): void {
        

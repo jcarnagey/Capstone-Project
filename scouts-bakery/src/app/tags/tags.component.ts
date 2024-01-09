@@ -10,7 +10,9 @@ import { DessertService } from '../services/dessert.service';
 export class TagsComponent implements OnInit{
   tag?:Tags[];
   constructor(dessertService:DessertService) {
-    this.tag = dessertService.getAllTags();
+    dessertService.getAllTags().subscribe(serverTags => {
+      this.tag = serverTags
+    });
    }
 
   ngOnInit(): void {

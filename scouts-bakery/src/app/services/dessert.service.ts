@@ -2,35 +2,37 @@ import { Injectable } from '@angular/core';
 import { Dessert } from '../models/desserts';
 import { desserts, sample_tags } from '../../dessert-data';
 import { Tags } from '../models/tags';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { DESSERT_BY_ID_URL, DESSERT_BY_SEARCH_URL, DESSERT_BY_TAG_URL, DESSERT_TAGS_URL, DESSERT_URL } from '../models/constants/urls';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DessertService {
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
   // Get all dessert from desserts-data.ts
-  getAll():Dessert[]{
-    return desserts;
+  getAll(): Observable<Dessert[] >{
+    return this.http.get<Dessert[]>(DESSERT_URL);
   }
 
   // search functionality
   searchedDessert(searchTerm:string){
-    return this.getAll().filter(desserts => 
-    desserts.name.toLowerCase().includes(searchTerm.toLowerCase()))
+    return this.http.get<Dessert[]>(DESSERT_BY_SEARCH_URL + searchTerm) 
   }
 
-  getAllTags():Tags[]{
-    return sample_tags;
+  getAllTags():Observable <Tags[]> {
+    return this.http.get<Tags[]>(DESSERT_TAGS_URL);
   }
 
-  getAllDessertTags(tag:string):Dessert[]{
+  getAllDessertTags(tag:string):Observable <Dessert[]> {
     return tag == "All"?
     this.getAll():
-    this.getAll().filter(desserts => desserts.tags?.includes(tag));
+    this.http.get<Dessert[]>(DESSERT_BY_TAG_URL + tag);
   }
 
-  getDessertById(dessertId:number):Dessert{
-    return this.getAll().find(dessert => dessert.id == dessertId) ?? new Dessert();
+  getDessertById(dessertId:number):Observable <Dessert> {
+    return this.http.get<Dessert>(DESSERT_BY_ID_URL + dessertId);
   }
 }
