@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +26,7 @@ import { AboutComponent } from './about/about.component';
 import { CheckOutComponent } from './pages/check-out/check-out.component';
 import { OrderItemsListComponent } from './order-items-list/order-items-list.component';
 import { LoadingComponent } from './pages/loading/loading.component'
+import { loadingInterceptor } from './loading.interceptor';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,9 @@ import { LoadingComponent } from './pages/loading/loading.component'
     GoogleMapsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {provide:HTTP_INTERCEPTORS, useClass:loadingInterceptor, multi: true}
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
