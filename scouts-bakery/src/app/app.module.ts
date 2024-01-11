@@ -18,13 +18,14 @@ import { SearchComponent } from './search/search.component';
 import { TagsComponent } from './tags/tags.component';
 import { DessertPageComponent } from './pages/dessert-page/dessert-page.component';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { TitleComponent } from './title/title.component';
 import { MatBadgeModule } from '@angular/material/badge';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { AboutComponent } from './about/about.component';
 import { CheckOutComponent } from './pages/check-out/check-out.component';
-import { OrderItemsListComponent } from './order-items-list/order-items-list.component'
+import { OrderItemsListComponent } from './order-items-list/order-items-list.component';
+import { LoadingComponent } from './pages/loading/loading.component'
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { OrderItemsListComponent } from './order-items-list/order-items-list.com
     TitleComponent,
     AboutComponent,
     CheckOutComponent,
-    OrderItemsListComponent
+    OrderItemsListComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
